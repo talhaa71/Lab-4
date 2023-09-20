@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Title</title?>
-	</head>
-	<body>
-	<h1>Volunteer Form</h1>>
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+</head>
+<body>
+	<h1>Volunteer Form</h1>
+	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+
 	<fieldset>
 		<p>My Info<p>
 		<div>
@@ -20,10 +22,20 @@
 		<div>
 			<label>Email Address: <input type="email" name="email_feild" placeholder="email here"></label>
 		</div>
+		<p>Gender:</p>
 		<div>
 			<label>Male <input type="radio" name="radio_feild" value="male gender"></label>
 			<label>Female <input type="radio" name="radio_feild" value="female gender"></label>
 		</div>
+		<p>Age:</p>
+		<select name="age_feild">
+			<option>under 18</option>
+			<option>18-24</option>
+			<option>25-34</option>
+			<option>35-44</option>
+			<option>45-54</option>
+			<option>55-64</option>
+			<option>65 and over</option>
 	</feildset>
 	<p>My Availability</p>
 	<feildset>
@@ -36,6 +48,13 @@
 		<label>Thursday <input type="checkbox" name="checkbox_feild[]" value="thursday"></label><br>
 		<label>Friday <input type="checkbox" name="checkbox_feild[]" value="friday"></label><br>
 		<label>Saturday <input type="checkbox" name="checkbox_feild[]" value="saturday"></label><br>
-		<p>Any Comments</p>
-	</body>
+	</div>
+		<div>
+		<label for="our_textarea">Comments:</labes>
+			<textarea cols="30" rows="10" name="textarea_field" placeholder= "Default Textarea text" id-"our_textarea"></textarea>	
+		</div>
+	</fieldset>
+	<input type="submit" value="Your form has been recorded">
+	</form>
+</body>
 </html>
